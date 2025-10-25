@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="سجل حساب جديد في CyberAware للوصول إلى محتوى تعليمي متقدم">
+  <meta name="keywords" content="تسجيل, حساب جديد, أمن سيبراني, تعلم">
+  <meta name="author" content="CyberAware Team">
+  <meta property="og:title" content="تسجيل حساب - CyberAware">
+  <meta property="og:description" content="سجل حساب جديد في CyberAware للوصول إلى محتوى تعليمي متقدم">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cyberaware.example.com/signup.html">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <title>تسجيل حساب - CyberAware</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
+  
+  <header>
+    <nav aria-label="التنقل الرئيسي">
+      <div class="logo">CyberAware</div>
+      <button class="hamburger" aria-expanded="false" aria-controls="primary-menu" aria-label="القائمة">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="primary-menu" class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">نبذة</a></li>
+        <li><a href="threats.html">المخاطر</a></li>
+        <li><a href="protect.html">الحماية</a></li>
+        <li><a href="quiz.html">اختبار</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+        <li><a href="signup.html" aria-current="page">تسجيل</a></li>
+        <li><a href="signin.html">دخول</a></li>
+        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main id="main-content">
+    <section class="auth-page">
+      <div class="auth-container">
+        <div class="auth-form-container">
+          <h1>تسجيل حساب جديد</h1>
+          <p>انضم إلى مجتمع CyberAware التعليمي</p>
+          
+          <form id="signupForm" novalidate>
+            <div class="form-group">
+              <label for="username">اسم المستخدم:</label>
+              <input type="text" id="username" name="username" required aria-required="true">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">البريد الإلكتروني:</label>
+              <input type="email" id="email" name="email" required aria-required="true">
+            </div>
+            
+            <div class="form-group">
+              <label for="password">كلمة المرور:</label>
+              <input type="password" id="password" name="password" required aria-required="true">
+              <div class="password-strength">
+                <div class="strength-bar"></div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="confirmPassword">تأكيد كلمة المرور:</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" required aria-required="true">
+            </div>
+            
+            <div class="form-options">
+              <div class="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">أوافق على <a href="privacy.html">الشروط والأحكام</a></label>
+              </div>
+            </div>
+            
+            <button type="submit" class="cta-btn">تسجيل</button>
+            
+            <div id="signupResult" aria-live="polite"></div>
+          </form>
+          
+          <div class="auth-switch">
+            <p>لديك حساب بالفعل؟ <a href="signin.html">سجل دخول</a></p>
+          </div>
+        </div>
+        
+        <div class="auth-info">
+          <h2>لماذا تنضم إلينا؟</h2>
+          <ul>
+            <li>محتوى تعليمي عالي الجودة</li>
+            <li>اختبارات تفاعلية لقياس تقدمك</li>
+            <li>شهادات معتمدة عند إتمام الدورات</li>
+            <li>مجتمع نشط من المهتمين بالأمن السيبراني</li>
+          </ul>
+          
+          <div class="auth-image">
+            <img src="assets/images/cybersecurity-signup.jpg" alt="أشخاص يتعلمون عن الأمن السيبراني" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 CyberAware. جميع الحقوق محفوظة.</p>
+    <nav aria-label="تنقل التذييل">
+      <ul class="footer-links">
+        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </footer>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
